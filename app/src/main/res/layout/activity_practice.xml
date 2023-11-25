@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".PracticeActivity">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundedbuttongrey"
+        android:fontFamily="@font/jost_medium"
+        android:text="Rabbit"
+        android:textColor="#00176F"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/russo_one"
+        android:text="UniEng"
+        android:textColor="#00176F"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:clickable="true"
+        android:fontFamily="@font/roboto"
+        android:text="Практика"
+        android:textColor="#00176F"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/background"
+        app:itemIconSize="33dp"
+        app:itemIconTint="@drawable/selector"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:fontFamily="@font/jost_medium"
+        android:text="Выберите пару слово-перевод"
+        android:textColor="#00176F"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundedbuttongrey"
+        android:fontFamily="@font/jost_medium"
+        android:text="Rabbit"
+        android:textColor="#00176F"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundedbuttongrey"
+        android:fontFamily="@font/jost_medium"
+        android:text="Rabbit"
+        android:textColor="#00176F"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundedbuttongrey"
+        android:fontFamily="@font/jost_medium"
+        android:text="Rabbit"
+        android:textColor="#00176F"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundedbuttongrey"
+        android:fontFamily="@font/jost_medium"
+        android:text="Rabbit"
+        android:textColor="#00176F"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundedbuttongrey"
+        android:fontFamily="@font/jost_medium"
+        android:text="Rabbit"
+        android:textColor="#00176F"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundedbuttongrey"
+        android:fontFamily="@font/jost_medium"
+        android:text="Rabbit"
+        android:textColor="#00176F"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundedbuttongrey"
+        android:fontFamily="@font/jost_medium"
+        android:text="Rabbit"
+        android:textColor="#00176F"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button13"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundedbuttongrey"
+        android:fontFamily="@font/jost_medium"
+        android:text="Rabbit"
+        android:textColor="#00176F"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundedbuttongrey"
+        android:fontFamily="@font/jost_medium"
+        android:text="Rabbit"
+        android:textColor="#00176F"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundedbuttongrey"
+        android:fontFamily="@font/jost_medium"
+        android:text="Rabbit"
+        android:textColor="#00176F"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/roundedbuttongrey"
+        android:fontFamily="@font/jost_medium"
+        android:text="Rabbit"
+        android:textColor="#00176F"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/button12"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="800px"
+        android:layout_height="150px"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/roundedbutton"
+        android:fontFamily="@font/jost_medium"
+        android:text="Продолжить"
+        android:textColor="#00176F"
+        android:textSize="12sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
