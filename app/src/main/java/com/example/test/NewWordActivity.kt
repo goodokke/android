@@ -11,6 +11,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import java.io.InputStream
 import java.util.Locale
@@ -21,6 +22,7 @@ class NewWordActivity : AppCompatActivity(),TextToSpeech.OnInitListener {
     private var selectIndex = 0
     private var box = 0
     private var tts: TextToSpeech? = null
+    private var isFavorite: Boolean = false
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new_word)
@@ -120,6 +122,29 @@ class NewWordActivity : AppCompatActivity(),TextToSpeech.OnInitListener {
 
         val t2 = findViewById(R.id.textView15) as TextView
         t2.text = Html.fromHtml("<string><b>Перевод</b> вышеуказанного предложения, <b>такой</b> чтобы сохранить смысл</string>")
+
+        val imageViewStar = findViewById<ImageView>(R.id.imageView5)
+
+        isFavorite = sharedPreferences.getBoolean(word?.word, false)
+        if(isFavorite){
+            imageViewStar.setColorFilter(ContextCompat.getColor(this, R.color.yellow))
+        }
+        else
+        {
+            imageViewStar.setColorFilter(ContextCompat.getColor(this, R.color.favorite))
+        }
+
+        imageViewStar.setOnClickListener {
+            if(isFavorite){
+                isFavorite = false
+                imageViewStar.setColorFilter(ContextCompat.getColor(this, R.color.favorite))
+            }
+            else{
+                isFavorite = true
+                imageViewStar.setColorFilter(ContextCompat.getColor(this, R.color.yellow))
+            }
+            sharedPreferences.edit().putBoolean(word?.word, isFavorite).apply()
+        }
     }
 
     override fun onInit(status: Int) {
