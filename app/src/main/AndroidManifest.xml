@@ -15,7 +15,7 @@
             android:name=".StartActivity"
             android:exported="true" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".MainActivity"
             android:exported="true"/>
         <activity
             android:name=".PracticeActivity"
@@ -25,15 +25,17 @@
             android:exported="true" />
         <activity
             android:name=".BookActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="true" />
         <activity
             android:name=".WordActivity"
             android:exported="true" />
         <activity
             android:name=".FavoritesActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true">
              <intent-filter>
              <action android:name="android.intent.action.MAIN" />
@@ -46,5 +48,5 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

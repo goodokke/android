@@ -41,9 +41,8 @@ class MyAdapter(context: Context, arr: ArrayList<ItemList>?) : BaseAdapter() {
         val inflater = LayoutInflater.from(context)
         //Если someView (View из ListView) вдруг оказался равен
         //null тогда мы загружаем его с помошью inflater
-        if (someView == null) {
-            someView = inflater.inflate(R.layout.list_item, arg2, false)
-        }
+        someView = inflater.inflate(R.layout.list_item, arg2, false)
+
         if (data[i].header != null) {
             val header = someView?.findViewById(R.id.item_headerText) as TextView
             val subHeader = someView.findViewById(R.id.item_subHeaderText) as TextView

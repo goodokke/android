@@ -19,7 +19,7 @@
         android:textColor="#00176F"
         android:textSize="12sp"
         app:backgroundTint="@null"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -93,7 +93,7 @@
         android:textColor="#00176F"
         android:textSize="12sp"
         app:backgroundTint="@null"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -247,7 +247,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/startButton"
         android:layout_width="800px"
         android:layout_height="150px"
         android:layout_marginBottom="30dp"
