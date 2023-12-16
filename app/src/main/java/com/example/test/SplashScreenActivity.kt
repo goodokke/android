@@ -15,7 +15,7 @@ class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
-
+        supportActionBar?.hide()
         // Инициализация SharedPreferences внутри метода onCreate
         sharedPreferences = getSharedPreferences("my_prefs", Context.MODE_PRIVATE)
         //Убрать очистку кэша

@@ -23,7 +23,7 @@ class WordActivity : AppCompatActivity(),TextToSpeech.OnInitListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_word)
-
+        supportActionBar?.hide()
         tts = TextToSpeech(this, this)
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
         BottomNavigationHelper(this, bottomNavigationView)
